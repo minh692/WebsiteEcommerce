@@ -1,0 +1,144 @@
+<h1 class="bg-secondary p-2 text-center">Thêm, Sửa, Xóa Sản Phẩm</h1>
+<input type="text" ng-model="txtSearch" placeholder="Tìm kiếm" ng-keyup="search()" class="ms-auto d-flex my-2 p-1">
+
+
+<table class="table table-hover table-bordered">
+    <tr>
+        <th>Tên sản phẩm</th>
+
+        <th>Giá</th>
+        <th>Sửa</th>
+        <th>Xóa</th>
+    </tr>
+    <tr ng-repeat="sp in laptops">
+
+        <td>{{sp.name}}</td>
+
+        <td>{{sp.giagiam |number}}đ </td>
+        <td>
+            <button class="btn btn-warning" ng-click="editUser(sp.id)" data-bs-toggle="modal" data-bs-target="#myModal">Sửa</button>
+        </td>
+        <td>
+            <button class="btn btn-danger" ng-click="deleteUser(sp.id)">Xóa</button>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">Thêm</button></td>
+    </tr>
+
+</table>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Sửa sản phẩm</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form name="myEditForm" ng-submit="updateUser()">
+                <div class="input-group">
+                    <label for="" class="col-3">Tên</label>
+                    <input type="text" name="edituser.name"  ng-model="edituser.name" required class="col-7"> <br>    
+                </div>
+                <div class="input-group">
+                    <label for="" class="col-3">Loại</label>
+                    <input type="text" name="edituser.loai"  ng-model="edituser.loai" required class="col-7"> <br>
+                </div>
+                <div class="input-group">
+                    <label for="" class="col-3">Giá</label>
+                    <input type="text" name="edituser.giagiam" ng-model="edituser.giagiam" required class="col-7"> 
+                </div>
+                <div class="input-group">
+                    <label for="" class="col-3">Ảnh</label>
+                    <input type="text" name="edituser.anh"  ng-model="edituser.anh" class="col-7" required>
+                    <br>
+                </div>
+                <div class="input-group">
+                    <label for="" class="col-3">Phần trăm giảm</label>
+                    <input type="text" name="edituser.phantramgiam" ng-model="edituser.phantramgiam" required class="col-7">
+                </div>
+                <div class="input-group">
+                    <label for="" class="col-3">Giá gốc</label>
+                    <input type="text" name="edituser.giagoc" ng-model="edituser.giagoc" required class="col-7">
+                </div>
+                
+                
+                
+                <button>Cập nhật</button>
+            </form>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+<div class="modal" id="myModal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Thêm sản phẩm</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form name="myEditForm" ng-submit="addUser()">
+                <div class="input-group">
+                    <label for="" class="col-3">Tên</label>
+                    <input type="text" name="edituser.name"  ng-model="laptop.name" required class="col-7"> <br>    
+                </div>
+                <div class="input-group">
+                    <label for="" class="col-3">Loại</label>
+                    <input type="text" name="edituser.loai"  ng-model="laptop.loai" required class="col-7"> <br>
+                </div>
+                <div class="input-group">
+                    <label for="" class="col-3">Ảnh</label>
+                    <input type="text" name="edituser.anh"  ng-model="laptop.anh" class="col-7" required>
+                    <br>
+                </div>
+                
+                
+                <div class="input-group">
+                    <label for="" class="col-3">Giá</label>
+                    <input type="text" name="edituser.giagiam" ng-model="laptop.giagiam" required class="col-7"> 
+                </div>
+                <div class="input-group">
+                    <label for="" class="col-3">Phần trăm giảm</label>
+                    <input type="text" name="edituser.phantramgiam" ng-model="laptop.phantramgiam" required class="col-7">
+                </div>
+                <div class="input-group">
+                    <label for="" class="col-3">Giá gốc</label>
+                    <input type="text" name="edituser.giagoc" ng-model="laptop.giagoc" required class="col-7">
+                </div>
+                
+                
+                
+                <button>Thêm</button>
+            </form>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+

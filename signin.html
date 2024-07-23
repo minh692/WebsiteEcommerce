@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="css/signin.css">
+<body ng-controller="formController">
+    <form action="" name="frmDNhap" ng-submit="signin()" >
+        <div class="container d-flex justify-content-center align-items-center min-vh-100">
+            <div class="row border rounded-5 p-3 bg-white shadow box-area">
+                <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #103cbe;">
+                    <div class="featured-image mb-3">
+                        <img src="images/signin.png" alt="" class="img-fluid" style="width: 250px;">
+                    </div>
+                    <p class="text-white fs-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">LOG IN</p>
+                    <small>Log In Once And Use Forever.</small>
+                </div>
+    
+                <div class="col-md-6 right-box">
+                    <div class="row align-items-center">
+                        <div class="header-text mb-4">
+                            <h2 class="text-center">Đăng Nhập</h2>
+                        </div>
+                        <div class="input-group mb-3">
+                                <label for="" class="col-12">Tên tài khoản</label>
+                                <input type="text" name="username" ng-model="user.name" class="col-12 form-control form-control-lg bg-light fs-6 rounded-1" placeholder="Tên tài khoản hoặc Gmail" required>
+                                <span class="input-group-text" id="basic-addon2"><i class="fa-regular fa-user"></i></span>
+                                <em style="color: red;" ng-if="frmDNhap.username.$touched && frmDNhap.username.$invalid" class="col-12">
+                                    Vui lòng nhập tên
+                                </em>
+                        </div>
+                        <div class="input-group mb-1">
+                                <label for="" class="col-12">Mật khẩu</label>
+                                <input type="password" name="password" ng-model="user.pass" class="col-12 form-control form-control-lg bg-light fs-6 rounded-1" placeholder="Mật khẩu" required>
+                                <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-key"></i></span>
+                                <em style="color: red;" ng-if="frmDNhap.password.$touched && frmDNhap.password.$invalid" class="col-12">
+                                    Vui lòng nhập mật khẩu
+                                </em>
+                                
+                        </div>
+                        <div class="input-group mb-5 d-flex justify-content-between">
+                            <div class="form-check">
+                                <input type="checkbox" name="" id="" class="form-check-input" id="formCheck">
+                                <label for="formCheck" class="form-check-label text-secondary"><small>Ghi nhớ mật khẩu</small></label>
+                            </div>
+                            <div class="forgot">
+                                <small><a href="#">Quên mật khẩu?</a></small>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-lg btn-primary w-100 fs-6" type="submit">Đăng nhập</button>
+                        </div>
+                        <div class="row">
+                            <small>Bạn chưa có tài khoản? <a href="#!signup">Đăng Ký</a></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

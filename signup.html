@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="css/signup.css">
+<body>
+    <form action="" name="frmDKy" ng-submit="addUser()">
+        <div class="container d-flex justify-content-center align-items-center min-vh-100">
+            <div class="row border rounded-5 p-3 bg-white shadow box-area">
+                <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #08cc56;">
+                    <div class="featured-image mb-3">
+                        <img src="images/signup.png" alt="" class="img-fluid" style="width: 250px;">
+                    </div>
+                    <p class="text-white fs-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">REGISTER</p>
+                    <small>Log In Once And Use Forever.</small>
+                </div>
+    
+                <div class="col-md-6 right-box">
+                    <div class="row align-items-center">
+                        <div class="header-text mb-4">
+                            <h2 class="text-center">Đăng Ký</h2>
+                        </div>
+                        <div class="input-group mb-3">
+                                <label for="" class="col-12">Tên tài khoản</label>
+                                <input type="text" ng-model="user.name" name="username" class="col-12 form-control form-control-lg bg-light fs-6 rounded-1" placeholder="Nhập tên tài khoản" required>
+                                <span class="input-group-text" id="basic-addon2"><i class="fa-regular fa-user"></i></span>
+                                <em style="color: red;" ng-if="frmDKy.username.$touched && frmDKy.username.$invalid" class="col-12">
+                                    Vui lòng nhập tên tài khoản
+                                </em>
+                        </div>
+                        <div class="input-group mb-3">
+                                <label for="" class="col-12">Mật khẩu</label>
+                                <input type="password" ng-minlength="6" ng-model="user.pass" name="password" class="col-12 form-control form-control-lg bg-light fs-6 rounded-1" placeholder="Nhập mật khẩu" required>
+                                <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-key"></i></span>
+                                <em style="color: red;" ng-if="frmDKy.password.$touched && frmDKy.password.$invalid" class="col-12">
+                                    Vui lòng nhập mật khẩu lớn hơn 6 kí tự
+                                </em>
+                        </div>
+                        <div class="input-group mb-4">
+                          <label for="" class="col-12">Email</label>
+                          <input type="email" ng-model="user.email" name="email" class="col-12 form-control form-control-lg bg-light fs-6 rounded-1" placeholder="Nhập email" required>
+                          <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-key"></i></span>
+                          <div style="color: red;" ng-if="frmDKy.email.$touched && frmDKy.email.$invalid" class="col-12">
+                            <em ng-if="frmDKy.email.$error.required">Vui lòng nhập email</em>
+                            <em ng-if="frmDKy.email.$error.email">Vui lòng nhập email hợp lệ</em>
+                          </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-lg btn-success w-100 fs-6 bgdky" >Đăng ký</button>
+                        </div>
+                        <div class="row">
+                            <small>Bạn đã có tài khoản? <a href="#!signin">Đăng Nhập</a></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

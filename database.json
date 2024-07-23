@@ -1,0 +1,361 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Product001",
+      "cost": 10
+    },
+    {
+      "id": 2,
+      "name": "Product002",
+      "cost": 20
+    },
+    {
+      "id": 3,
+      "name": "Product003",
+      "cost": 30
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Location001"
+    },
+    {
+      "id": 2,
+      "name": "Location002"
+    },
+    {
+      "id": 3,
+      "name": "Location003"
+    }
+  ],
+  "users": [
+    {
+      "id": 2,
+      "name": "User002",
+      "pass": "123456789",
+      "email": "User002@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "User003",
+      "pass": "123456789",
+      "email": "User003@gmail.com"
+    },
+    {
+      "name": "User001",
+      "email": "User001@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "minh",
+      "email": "123123@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "minh123",
+      "pass": "123456789",
+      "email": "minh123@gmail.com",
+      "id": 6
+    },
+    {
+      "name": "minhminh",
+      "pass": "123456",
+      "email": "minh@gmail.com",
+      "id": 7
+    }
+  ],
+  "laptop": [
+    {
+      "id": 1,
+      "thuonghieu": "Apple",
+      "loai": "laptop",
+      "anh": "lt2.webp",
+      "name": "Apple iMac M3 MQRU3SA/A 2023",
+      "giagiam": "67200000",
+      "phantramgiam": "-10%",
+      "giagoc": "2100000"
+    },
+    {
+      "id": 2,
+      "thuonghieu": "Acer",
+      "loai": "laptop",
+      "anh": "lt2.webp",
+      "name": "Laptop Acer Predator Helios Neo PHN16-71-53M7",
+      "giagiam": "28900000",
+      "phantramgiam": "-42%",
+      "giagoc": "22000000"
+    },
+    {
+      "id": 3,
+      "thuonghieu": "Dell",
+      "loai": "laptop",
+      "anh": "lt3.webp",
+      "name": "Laptop Dell Precision 7680 Workstation 71024681",
+      "giagiam": "98900000",
+      "phantramgiam": "-4%",
+      "giagoc": "102000000"
+    },
+    {
+      "id": 4,
+      "thuonghieu": "Dell",
+      "loai": "laptop",
+      "anh": "lt4.webp",
+      "name": "Dell XPS 2025",
+      "giagiam": "20000000",
+      "phantramgiam": "-10%",
+      "giagoc": "42500000"
+    },
+    {
+      "id": 5,
+      "thuonghieu": "Dell",
+      "loai": "laptop",
+      "anh": "lt5.webp",
+      "name": "Laptop DELL Inspiron 16 5620 N6I7110W1",
+      "giagiam": "38500000",
+      "phantramgiam": "-10%",
+      "giagoc": "42500000"
+    },
+    {
+      "id": 6,
+      "thuonghieu": "Apple",
+      "loai": "laptop",
+      "anh": "lt6.webp",
+      "name": "Macbook Pro M1 2021 32GB Ram 1TB SSD 16 INCH",
+      "giagiam": "59500000",
+      "phantramgiam": "-17%",
+      "giagoc": "71300000"
+    },
+    {
+      "id": 7,
+      "thuonghieu": "Apple",
+      "loai": "laptop",
+      "anh": "lt7.webp",
+      "name": "Macbook Pro M1 2021 32GB Ram 1TB SSD 16 INCH",
+      "giagiam": "38500000",
+      "phantramgiam": "-10%",
+      "giagoc": "42500000"
+    },
+    {
+      "id": 8,
+      "thuonghieu": "Apple",
+      "loai": "laptop",
+      "anh": "lt8.webp",
+      "name": "Macbook Pro M1 2021 32GB Ram 1TB SSD 16 INCH",
+      "giagiam": "38500000",
+      "phantramgiam": "-10%",
+      "giagoc": "42500000"
+    },
+    {
+      "id": 9,
+      "thuonghieu": "Apple",
+      "loai": "laptop",
+      "anh": "lt3.webp",
+      "name": "Apple iMac M3 MQRU3SA/A 2023",
+      "giagiam": "67200000",
+      "phantramgiam": "-30%",
+      "giagoc": "105100000"
+    },
+    {
+      "id": 10,
+      "thuonghieu": "Acer",
+      "loai": "laptop",
+      "anh": "lt2.webp",
+      "name": "Laptop Acer Predator Helios Neo PHN16-71-53M7",
+      "giagiam": "28900000",
+      "phantramgiam": "-42%",
+      "giagoc": "22000000"
+    },
+    {
+      "id": 11,
+      "thuonghieu": "Dell",
+      "loai": "laptop",
+      "anh": "lt3.webp",
+      "name": "Laptop Dell Precision 7680 Workstation 71024681",
+      "giagiam": "98900000",
+      "phantramgiam": "-4%",
+      "giagoc": "102000000"
+    },
+    {
+      "id": 12,
+      "thuonghieu": "Dell",
+      "loai": "laptop",
+      "anh": "lt4.webp",
+      "name": "Laptop DELL Inspiron 16 5620 N6I7110W1",
+      "giagiam": "38500000",
+      "phantramgiam": "-10%",
+      "giagoc": "42500000"
+    },
+    {
+      "id": 13,
+      "thuonghieu": "Dell",
+      "loai": "laptop",
+      "anh": "lt5.webp",
+      "name": "Laptop DELL Inspiron 16 5620 N6I7110W1",
+      "giagiam": "38500000",
+      "phantramgiam": "-10%",
+      "giagoc": "42500000"
+    },
+    {
+      "id": 14,
+      "thuonghieu": "Asus",
+      "loai": "laptop",
+      "anh": "lt6.webp",
+      "name": "Macbook Pro M1 2021 32GB Ram 1TB SSD 16 INCH",
+      "giagiam": "59500000",
+      "phantramgiam": "-17%",
+      "giagoc": "71300000"
+    },
+    {
+      "thuonghieu": "Lenovo",
+      "name": "Apple iMac M3 MQRU3SA/A 2023",
+      "loai": "laptop",
+      "anh": "lt1.webp",
+      "giagiam": "67200000",
+      "phantramgiam": "-10%",
+      "giagoc": "105100000",
+      "id": 17
+    }
+  ],
+  "dienthoai": [
+    {
+      "id": 1,
+      "anh": "dt1.jpg",
+      "name": "Điện thoại iPhone 15 Plus",
+      "giagiam": "24990000",
+      "phantramgiam": "-3%",
+      "giagoc": "25990000"
+    },
+    {
+      "id": 2,
+      "anh": "dt2.jpg",
+      "name": "Điện thoại iPhone 11 64GB ",
+      "giagiam": "9990000",
+      "phantramgiam": "-15%",
+      "giagoc": "11790000"
+    },
+    {
+      "id": 3,
+      "anh": "dt3.jpg",
+      "name": "Điện thoại OPPO Reno11 5G",
+      "giagiam": "10990000",
+      "phantramgiam": "-4%",
+      "giagoc": "12000000"
+    },
+    {
+      "id": 4,
+      "anh": "dt4.jpg",
+      "name": "Điện thoại Samsung Galaxy A15",
+      "giagiam": "5990000",
+      "phantramgiam": "-4%",
+      "giagoc": "6290000"
+    },
+    {
+      "id": 5,
+      "anh": "dt5.jpg",
+      "name": "Điện thoại Samsung Galaxy A25",
+      "giagiam": "6690000",
+      "phantramgiam": "-2%",
+      "giagoc": "6990000"
+    },
+    {
+      "id": 6,
+      "anh": "dt6.jpg",
+      "name": "Điện thoại OPPO Reno11 Pro",
+      "giagiam": "16490000",
+      "phantramgiam": "-2%",
+      "giagoc": "16990000"
+    },
+    {
+      "id": 7,
+      "anh": "dt7.jpg",
+      "name": "Điện thoại iPhone 15 128GB",
+      "giagiam": "24990000",
+      "phantramgiam": "-3%",
+      "giagoc": "25990000"
+    },
+    {
+      "id": 8,
+      "anh": "dt8.jpg",
+      "name": "Điện thoại iPhone 15 Pro 128GB",
+      "giagiam": "24990000",
+      "phantramgiam": "-3%",
+      "giagoc": "25990000"
+    }
+  ],
+  "sosinh": [
+    {
+      "id": 1,
+      "danhmuc": "Quần áo",
+      "anh": "a1.jpg",
+      "name": "Bộ 5 nón len Kio loại tốt",
+      "giagiam": "205000",
+      "giagoc": "225000"
+    },
+    {
+      "id": 2,
+      "danhmuc": "Quần áo",
+      "anh": "a2.jpg",
+      "name": "Sandal tập đi cho bé",
+      "giagiam": "100000",
+      "giagoc": "120000"
+    },
+    {
+      "id": 3,
+      "danhmuc": "Quần áo",
+      "anh": "a3.jpg",
+      "name": "Giày vải tập đi trẻ em",
+      "giagiam": "185000",
+      "giagoc": "200000"
+    },
+    {
+      "id": 4,
+      "danhmuc": "Quần áo",
+      "anh": "a5.jpg",
+      "name": "Bộ 5 đôi vớ sọc",
+      "giagiam": "400000",
+      "giagoc": "420000"
+    },
+    {
+      "id": 5,
+      "danhmuc": "Quần áo",
+      "anh": "a3.jpg",
+      "name": "Giày vải tập đi trẻ em",
+      "giagiam": "185000",
+      "giagoc": "200000"
+    },
+    {
+      "id": 6,
+      "danhmuc": "Sữa",
+      "anh": "a5.jpg",
+      "name": "Bộ 5 đôi vớ sọc",
+      "giagiam": "400000",
+      "giagoc": "420000"
+    },
+    {
+      "id": 7,
+      "danhmuc": "Sữa",
+      "anh": "a1.jpg",
+      "name": "Bộ 5 nón len Kio loại tốt",
+      "giagiam": "205000",
+      "giagoc": "225000"
+    },
+    {
+      "id": 8,
+      "danhmuc": "Sữa",
+      "anh": "a2.jpg",
+      "name": "Sandal tập đi cho bé",
+      "giagiam": "100000",
+      "giagoc": "120000"
+    },
+    {
+      "id": 9,
+      "danhmuc": "Sữa",
+      "anh": "a2.jpg",
+      "name": "Sandal tập đi cho bé",
+      "giagiam": "100000",
+      "giagoc": "120000"
+    }
+  ]
+}
